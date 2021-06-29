@@ -4,13 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ListMovie from "./components/Movie/ListMovie";
 import { Modal, Button } from "react-bootstrap";
 import SearchMovie from "./components/Movie/SearchMovie";
-import Star from "./components/Movie/Star";
+
 
 import AddMovie from "./components/Movie/AddMovie";
 
 function App() {
   const [movies, setMovies] = useState([
     {
+      id:1,
       titre: "Transformers: The Last Knight",
       description: "https://ibb.co/gGv6QS",
       poster: "https://image.ibb.co/k7P0kS/transformers4_640x320.jpg",
@@ -18,6 +19,7 @@ function App() {
       rate: 6,
     },
     {
+      id:2,
       titre: "Blade Runner 2049",
       description: "https://ibb.co/cXjfKn",
       poster: "https://image.ibb.co/ct9rQS/Blade_Runner2049_640x320.jpg",
@@ -25,6 +27,7 @@ function App() {
       rate: 4,
     },
     {
+      id:3,
       titre: "Guardians of the Galaxy: Vol. 2",
       description: "https://ibb.co/b4nLkS",
       poster: "https://image.ibb.co/jAu0kS/GOG2_640x320.jpg",
@@ -32,6 +35,7 @@ function App() {
       rate: 5,
     },
     {
+      id:4,
       titre: "Spiderman: Homecoming",
       description: "https://ibb.co/mC5Uen",
       poster: "https://image.ibb.co/da7xX7/spiderman_homecoming_640x320.jpg",
@@ -39,6 +43,7 @@ function App() {
       rate: 8,
     },
     {
+      id:5,
       titre: "Wonder Woman",
       description: "https://ibb.co/enV1s7",
       poster: "https://image.ibb.co/dHdAkS/Wonder_Woman_640x320.jpg",

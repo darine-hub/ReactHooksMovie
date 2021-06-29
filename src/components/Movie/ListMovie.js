@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Star from "./Star";
+
 import SearchMovie from "./SearchMovie";
 import StarRatingComponent from "react-star-rating-component";
 
@@ -29,9 +29,9 @@ const ListMovie = (props) => {
             </a>
           </div>
 
-          <a description={movie.description}>
+          
             <img src={movie.poster} alt={movie.alt} border="0" />
-          </a>
+         
         </li>
       ))}
     </>
