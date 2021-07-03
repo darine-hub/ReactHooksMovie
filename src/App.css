@@ -37,13 +37,13 @@
   }
 }
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: linear-gradient(to top, #13547a 0%, #80d0c7 100%); 
-  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to top, #13547a 0%, #80d0c7 100%);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -52,7 +52,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white; 
+  color: white;
 }
 
 nav {
@@ -82,16 +82,16 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  color: white; 
-  width: 100%; 
-  animation: BobbySnuggles; 
-  animation-duration: .5s;
-  animation-function: ease-in-out; 
+  color: white;
+  width: 100%;
+  animation: BobbySnuggles;
+  animation-duration: 0.5s;
+  animation-function: ease-in-out;
 }
 
 .subnav li {
   padding: 20px;
-  list-style: none;  
+  list-style: none;
 }
 
 .nav-item.has-subnav:hover .subnav {
@@ -99,7 +99,7 @@ nav {
 }
 
 .nav-item.has-subnav {
-  position: relative; 
+  position: relative;
 }
 
 /*Time to apply widths for accordian to work
@@ -112,15 +112,35 @@ default width = 800/5 = 160px;
 */
 
 .accordion {
-  width: 1000px; height: 350px;
+  width: 1000px;
+  height: 350px;
   overflow: hidden;
   margin: 100px auto;
+  margin-left: 80px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.total {
+  display: flex;
+}
+.desc {
+  padding-top: 10px;
+  text-align: center;
+  background-color: #61dafb;
+  height: 80px;
+  width: 300px;
+  margin-top: 200px;
+  margin-right: 120px;
+  box-shadow: 6px 6px 6px black;
+}
+
+.desc label {
+  font-style: italic;
 }
 
 .accordion ul {
   width: 2100px;
-  height:800px;
+  height: 800px;
 }
 
 .accordion li {
@@ -134,8 +154,12 @@ default width = 800/5 = 160px;
   transition: all 0.5s;
 }
 
-.accordion ul:hover li {width: 40px;}
-.accordion ul li:hover {width: 650px;}
+.accordion ul:hover li {
+  width: 40px;
+}
+.accordion ul li:hover {
+  width: 650px;
+}
 .accordion li img {
   display: block;
 }
@@ -143,18 +167,17 @@ default width = 800/5 = 160px;
 .image_title {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  left: 0; bottom: 10px;  
-  width: 640px; 
-
+  left: 0;
+  bottom: 10px;
+  width: 640px;
 }
-.image_title a {
+.image_title {
   display: block;
-  text-align: center; 
+  text-align: center;
   color: #fff;
   text-decoration: none;
   padding: 20px;
 }
-
 
 @keyframes BobbySnuggles {
   0% {
@@ -162,13 +185,13 @@ default width = 800/5 = 160px;
     transform: rotate(15deg) scale(0);
   }
   100% {
-    opacity: 1; 
+    opacity: 1;
     transform: rotate(0deg) scale(1);
   }
 }
 
 @media screen and (max-width: 500px) {
   nav {
-    background: pink; 
+    background: pink;
   }
 }

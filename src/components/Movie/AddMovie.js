@@ -74,12 +74,12 @@ function AddMovie({ handleAddMovie }) {
             />
             <br />
             <label> rate</label>
-            <input
+            {/* <input
               type="number"
               class="form-control"
               onChange={handleChange}
               name="rate"
-            />
+            /> */}
             <br />
 
             <Button variant="primary" type="submit" onClick={mySubmitHandler}>
